@@ -1,17 +1,18 @@
+package Test;
+
+import Main.nl.huiswerk.service.NumberChecker;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class NumberCheckerTest {
 
-    private final NumberChecker checker = new NumberChecker();
-
     @Test
     void testEvenNumber() {
-        assertEquals("Number is even", checker.checkEvenOrOdd(4));
+        assertEquals("Number is even", NumberChecker.checkEvenOrOdd(4));
     }
 
     @Test
     void testOddNumber() {
-        assertEquals("Number is uneven", checker.checkEvenOrOdd(5));
+        assertEquals("Number is uneven", NumberChecker.checkEvenOrOdd(5));
     }
 }
